@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
@@ -21,10 +22,10 @@ function Header() {
                         <Offcanvas.Body className="justify-content-between">
                             <Nav>
                                 <Nav.Item>
-                                    <Nav.Link href="#" className="d-flex align-items-center">
+                                    <Link to="/" className="nav-link d-flex align-items-center">
                                         <i className="bi bi-house-door-fill text-dark fs-4 me-2"></i>
                                         <Navbar.Text className="d-md-none">Home</Navbar.Text>
-                                    </Nav.Link>
+                                    </Link>
                                 </Nav.Item>
                             </Nav>
                             <hr className="d-md-none"/>
@@ -51,10 +52,10 @@ function Header() {
                             <hr className="d-md-none"/>
                             <Nav>
                                 <Nav.Item >
-                                    <Nav.Link href="#" className="d-flex align-items-center">
+                                    <Link to="/setting" className="nav-link d-flex align-items-center">
                                         <i className="bi bi-gear-fill text-dark fs-4 me-2"></i>
                                         <Navbar.Text className="d-md-none">Setting</Navbar.Text>
-                                    </Nav.Link>
+                                    </Link>
                                 </Nav.Item>
                             </Nav>
                         </Offcanvas.Body>
